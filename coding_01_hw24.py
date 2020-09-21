@@ -57,7 +57,7 @@ def main(var_A,var_B):
         answer_label.configure(text = '')
         reset_all()
 
-#列出所有排列的副程式    
+#列出所有排列    
 def answer_numbers():
     return_numbers = []
     n1s = [str(i) for i in range(0,10)]
@@ -74,7 +74,7 @@ def answer_numbers():
                     return_numbers.append(n1+n2+n3+n4)
     return return_numbers
 
-#核對數字及位置對不對的副程式
+#核對數字及位置對不對
 def get_postion (numbers_1,numbers_2):
     in_postion = 0
     not_in_postion = 0
@@ -88,7 +88,7 @@ def get_postion (numbers_1,numbers_2):
     return in_postion,not_in_postion
 
 
-#去掉不對答案的副程式
+#去掉不對答案
 def next_numbers (return_list,answer_A,answer_B):
     flag_A = 0
     flag_B = 0    
