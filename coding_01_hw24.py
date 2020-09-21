@@ -1,9 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[3]:
-
-
+#桌面版的電腦猜使用者數字遊戲
 import tkinter as tk
 import tkinter.messagebox
 import random
@@ -145,10 +140,7 @@ def game_start():
     button_prompt.pack(side = tk.BOTTOM)
     answer_label.configure(text = answer)
 
-
-# In[4]:
-
-
+#桌面視窗規劃
 window = tk.Tk()
 window.title('猜數字')
 window.geometry('800x600')
@@ -197,18 +189,8 @@ prompt_B_entry = tk.Entry(prompt_B_frame, font = font_prompt, fg = color_B)
 
 button_prompt = tk.Button(prompt_frame, font = font_prompt, text = '送出提示', command = check_number)
 
-
+#視窗主程式
 window.mainloop()                
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
 
 
 
